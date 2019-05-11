@@ -1,0 +1,7 @@
+{
+	"name": "html generator for mongo db",
+	"version": "1.0.0",
+	"dependencies": {
+		"extract-mongo-schema": "^0.2.9"
+	}
+}
