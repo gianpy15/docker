@@ -1,5 +1,6 @@
 ##### Download base image #####
-FROM ubuntu:18.04
+#FROM ubuntu:18.04
+FROM gianpy15/latex
 MAINTAINER Gianpaolo Di Pietro
 
 ##### Update ubuntu #####
