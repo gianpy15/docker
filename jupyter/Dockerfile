@@ -1,6 +1,8 @@
 FROM jupyter/datascience-notebook
 MAINTAINER Gianpaolo Di Pietro
 
+USER root
+
 RUN apt-get update
 RUN apt-get install htop vim
 
