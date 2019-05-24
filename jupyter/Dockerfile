@@ -1,6 +1,9 @@
 FROM jupyter/datascience-notebook
 MAINTAINER Gianpaolo Di Pietro
 
+RUN apt-get update
+RUN apt-get install htop vim
+
 RUN pip install npm
 RUN pip install jupyterlab
 RUN pip install tqdm
