@@ -4,7 +4,7 @@ MAINTAINER Gianpaolo Di Pietro
 USER root
 
 RUN apt-get update
-RUN apt-get install htop vim
+RUN apt-get install -y htop vim
 
 RUN pip install npm
 RUN pip install jupyterlab
