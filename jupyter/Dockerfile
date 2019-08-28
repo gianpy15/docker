@@ -11,6 +11,8 @@ USER jovyan
 RUN pip install npm
 RUN pip install jupyterlab
 RUN pip install tqdm
+RUN pip install plotly
+RUN pip install ipywidgets
 RUN jupyter serverextension enable --py jupyterlab
 
 WORKDIR /exp
