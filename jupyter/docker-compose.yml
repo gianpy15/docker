@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  jupyter:
+    image: gianpy15/jupyter:latest
+    restart: always
+    ports:
+      - 8888:8888
+    command: jupyter lab --notebook-dir=. --NotebookApp.password='${PASSWORD}'
+    volumes: 
+      - /home/gianpaolo/Projects/DMProject:/exp
