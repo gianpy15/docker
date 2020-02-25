@@ -16,4 +16,6 @@ RUN pip install ipywidgets
 RUN jupyter serverextension enable --py jupyterlab
 
 WORKDIR /exp
-CMD ["/opt/conda/bin/jupyter", "lab", "--notebook-dir='/exp'"]
+
+ENTRYPOINT ["/opt/conda/bin/jupyter", "lab"]
+CMD ["--notebook-dir='/exp'"]
