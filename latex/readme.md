@@ -9,6 +9,6 @@ This command will create the container with the current directory mounted in `/s
 
 ### Compiling a latex document
 ```
-$ pdflatex my-document.tex
+$ pdflatex --output-dir build my-document.tex
 ```
 
