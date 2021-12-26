@@ -1,0 +1,23 @@
+version: '3'
+services:
+  airport:
+    image: orbsmiv/shairport-sync-rpi # or use your a different image such as cloudgenius/shairport
+    restart: always
+    network_mode: host
+    devices:
+      - /dev/snd:/dev/snd
+    volumes:
+      - /usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf
+    environment:
+      - AIRPLAY_NAME=TEAC
+      - PGID=1000
+      - PUID=1000
+
+  bluetooth:
+    build: ./bluetooth
+    restart: always
+    network_mode: host
+    devices:
+      - /dev/snd:/dev/snd
+    volumes:
+      - /usr/share/alsa/alsa.conf:/usr/share/alsa/alsa.conf
